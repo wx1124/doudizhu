@@ -1,5 +1,5 @@
 <template>
-	<div style="font-size: 25px; color: yellow;">
+	<div>
 		级别导航
 	</div>
 </template>

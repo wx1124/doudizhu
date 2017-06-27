@@ -1,7 +1,10 @@
 <template>
-    <div id="app">
+  <el-row>
+    <el-col :span='24'>
       <router-view></router-view>
-    </div>
+    </el-col>
+  </el-row>
+  <table
 </template>
 
 <script>
@@ -11,12 +14,6 @@ export default {
 </script>
 
 <style>
-.container{
-  width: auto;
-  background-image:url(assets/uu.jpg);
-  background-size: cover;
-  height:100vh;
-}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,12 +21,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 3px;
-}
-.game{
-  width: 1400px;
-  background-image:url(assets/22.jpg);
-  background-size: cover;
-  height:100vh;
-
 }
 </style>

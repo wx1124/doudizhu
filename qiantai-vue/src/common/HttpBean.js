@@ -1,20 +1,21 @@
-import axios from 'axios'; //插件
+import axios from 'axios';
 
 export function axPost(url,formObj,sucFun,failFun=function(err){}){
-	axios.post(url,formObj) //创建服务端
-        .then(function(res){
-          sucFun(res);
-        })
-        .catch(function(err){
-          failFun(err);
-        });
+	axios.post(url,formObj)
+		    .then(function(res){
+		        sucFun(res);
+		    })
+		    .catch(function(err){
+		        failFun(err);
+		    });
 }
+
 export function axGet(url,formObj,sucFun,failFun=function(err){}){
-	axios.get(url,formObj) //创建服务端
-        .then(function(res){
-          sucFun(res);
-        })
-        .catch(function(err){
-          failFun(err);
-        });
+	axios.get(url,formObj)
+		    .then(function(res){
+		        sucFun(res);
+		    })
+		    .catch(function(err){
+		        failFun(err);
+		    });
 }
